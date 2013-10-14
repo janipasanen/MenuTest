@@ -1,6 +1,7 @@
 package singlemenu;
 
 import javax.swing.*;
+
 import java.awt.*;
 import java.awt.event.*;
 
@@ -29,9 +30,9 @@ public class Main extends JFrame implements ActionListener {
 		FrameName.setSize(300, 100);
 		FrameName.setLocationRelativeTo(null);
 		FrameName.setVisible(true);
+		FrameName.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 	}
-
 
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == item1) {
@@ -44,7 +45,7 @@ public class Main extends JFrame implements ActionListener {
 			System.exit(0);
 		}
 	}
-		
+
 	public static void main(String[] args) {
 		{
 			new Main();
